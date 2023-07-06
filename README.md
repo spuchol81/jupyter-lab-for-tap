@@ -19,8 +19,14 @@ We look forward to seeing how you will use JupyterLab on Tanzu Application Platf
 tanzu acc create jupyter-lab --git-repo https://github.com/fklein82/jupyter-lab-for-tap --git-branch main --interval 5s\n
 ~~~
 
-### Deploy Jupyter Nodebook on TAP (with Kanico)
+### Deploy Jupyter Nodebook on TAP (with Accelerator)
+Deploy Accelerator and execute the following command: 
 
+~~~
+tanzu apps workload create -f $ACC-DIRECTORY/config/workload.yaml
+~~~
+
+### Deploy Jupyter Nodebook on TAP (with Kanico)
 This Tanzu command will build your container with TAP/Kanico and deploy it through a supplychain. 
 
 ~~~
@@ -32,8 +38,7 @@ tanzu apps workload create jupyter \
   --type web
 ~~~
 
-### Deploy Jupyter as web service on tap (with an OCI Image ready)
-
+### Deploy Jupyter as web service on tap (with an existing OCI Image)
 This Tanzu command will deploy JupyterLAB with an existing OCI image through a supplychain. 
 
 ~~~
@@ -44,7 +49,7 @@ tanzu apps workload create jupyter-nodebook-v2 \
   --image registry.fklein.me/mlops/jupyter:2023-07-05-16-26-29
 ~~~
 
-### If you want to build the Jupyter image by yourself:
+### If you want to build the Jupyter image by yourself (example):
 ~~~
 docker build . --file Dockerfile --tag jupyter-for-tap:1.0
 

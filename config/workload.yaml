@@ -1,15 +1,18 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: inclusion-frontend-web
+  name: jupyter-lab
   namespace: default
   labels:
-    apps.tanzu.vmware.com/workload-type: web
-    app.kubernetes.io/part-of: inclusion-node-portal
     apps.tanzu.vmware.com/has-tests: "true"
+    apps.tanzu.vmware.com/workload-type: web
+    app.kubernetes.io/part-of: ai-tools
 spec:
+  params:
+  - name: dockerfile
+    value: ./Dockerfile
   source:
     git:
-      url: https://github.com/fklein82/Inclusion-nodeportal.git
       ref:
         branch: main
+      url: https://github.com/fklein82/jupyter-lab-for-tap
