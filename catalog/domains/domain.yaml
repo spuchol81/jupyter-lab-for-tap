@@ -1,14 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
-  name: emoji-portal-domain
-  description: Everything related to Emojis
+  name: jupyter-domain
+  description: Jupyter LAB
   links:
-    - url: https://nodejs.org/en/
-      title: Node.js
-    - url: https://nodejs.org/en/
-      title: Node.js
-      icon: dashboard
+    - url: https://jupyter.org/
+      title: Jupyter LAB
   annotations:
     'backstage.io/techdocs-ref': dir:.
 spec:

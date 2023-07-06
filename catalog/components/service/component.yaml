@@ -1,23 +1,19 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: inclusion-portal
-  description: Service collecting all emojis
+  name: jupyter
+  description: jupyter LAB
   tags:
-    - inclusion
-    - node
-    - express
-    - tanzu
+    - jupyter
+    - ai-tools
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=inclusion-node-portal'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=ai-tools'
     'backstage.io/techdocs-ref': dir:.
   links:
-    - url: https://nodejs.org/
-      title: Node.js® is an open-source, cross-platform JavaScript runtime environment.
+    - url: https://jupyter.org/
+      title: JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. A modular design invites extensions to expand and enrich functionality.
 spec:
   type: service
   lifecycle: experimental
   owner: team-vmware-tanzu-se
-  system: emoji-portal
-  dependsOn:
-    - Resource:api-backend
+  system: jupyter

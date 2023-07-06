@@ -1,5 +1,3 @@
-# Inclusion Service
+### JupyterLAB
 
-The first release of this application stores emojis in an in-memory database and displays an emoji only as it is not stateful and data are ephemeral.
-
-The final release of this application stores data in a postgres database and can display a collection of emojis, as data are persistent.
+JupyterLab is the latest web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. A modular design invites extensions to expand and enrich functionality.

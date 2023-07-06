@@ -1,4 +1,4 @@
-site_name: 'Emoji Domain'
+site_name: 'Jupyter-domain'
 
 nav:
   - Home: index.md

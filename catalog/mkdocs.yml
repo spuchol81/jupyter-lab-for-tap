@@ -1,4 +1,4 @@
-site_name: 'inclusion-service'
+site_name: 'jupyter'
 
 nav:
   - Home: index.md
