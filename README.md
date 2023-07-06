@@ -44,7 +44,7 @@ tanzu apps workload create jupyter-nodebook-v2 \
   --image registry.fklein.me/mlops/jupyter:2023-07-05-16-26-29
 ~~~
 
-### If you want to build the Jupyer image by yourself:
+### If you want to build the Jupyter image by yourself:
 ~~~
 docker build . --file Dockerfile --tag jupyter-for-tap:1.0
 
