@@ -1,0 +1,15 @@
+accelerator:
+  displayName: Jupyter Lab
+  description: JupyterLab is a popular interactive development environment for working with notebooks, code, and data. Widely used within the data science community, JupyterLab supports several languages like Python, R, Julia, and many more. It offers a flexible, adaptable environment that enables you to handle data cleaning, statistical modeling, building and training machine learning models, visualizing data, and many other tasks in a seamless manner. 
+  iconUrl: https://github.com/fklein82/Inclusion-nodeportal/raw/main/acclerator.png
+  tags:
+    - jupyter
+  options:
+    - name: pkgName
+      label: Package name
+      inputType: text
+      defaultValue: "com.example"
+      required: true
+engine:
+  merge:
+    - include: [ "**/*" ]
