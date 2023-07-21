@@ -14,19 +14,19 @@ Please see our Installation Guide for detailed instructions on how to set up and
 
 We look forward to seeing how you will use JupyterLab on Tanzu Application Platform!
 
-### Add the Jupyter Nodebook Accelerator in the TAP accelerator list.
+### Add the Jupyter Notebook Accelerator in the TAP accelerator list.
 ~~~
 tanzu acc create jupyter-lab --git-repo https://github.com/fklein82/jupyter-lab-for-tap --git-branch main --interval 5s\n
 ~~~
 
-### Deploy Jupyter Nodebook on TAP (with Accelerator)
+### Deploy Jupyter Notebook on TAP (with Accelerator)
 Deploy Accelerator and execute the following command: 
 
 ~~~
 tanzu apps workload create -f $ACC-DIRECTORY/config/workload.yaml
 ~~~
 
-### Deploy Jupyter Nodebook on TAP (with Kanico)
+### Deploy Jupyter Notebook on TAP (with Kanico)
 This Tanzu command will build your container with TAP/Kanico and deploy it through a supplychain. 
 
 ~~~
@@ -42,7 +42,7 @@ tanzu apps workload create jupyter \
 This Tanzu command will deploy JupyterLAB with an existing OCI image through a supplychain. 
 
 ~~~
-tanzu apps workload create jupyter-nodebook-v2 \
+tanzu apps workload create jupyter-Notebook-v2 \
   --type web \
   --label app.kubernetes.io/part-of=jupyter-app \
   --annotation autoscaling.knative.dev/min-scale=1 \
