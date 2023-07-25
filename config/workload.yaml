@@ -9,10 +9,14 @@ metadata:
     app.kubernetes.io/part-of: ai-tools
 spec:
   params:
+  - name: testing_pipeline_matching_labels
+    value:
+      apps.tanzu.vmware.com/pipeline: test
+      app.kubernetes.io/part-of: ai-tools
   - name: dockerfile
     value: ./Dockerfile
   source:
     git:
       ref:
         branch: main
-      url: https://github.com/fklein82/jupyter-lab-for-tap
+      url: https://github.com/spuchol81/jupyter-lab-for-tap
